@@ -66,6 +66,22 @@
        }
    
    
+       function removeStorage(){
+         var key=document.getElementById("textkey").value;
+         storage.removeItem(key);
+         key="";
+         viewStorage();
+       }
+       
+       
+       function removeallStorage(){
+         storage.clear();
+         viewStorage();
+       }
+     }
+    </script>
+  </body>
+</html>
    
    
    
